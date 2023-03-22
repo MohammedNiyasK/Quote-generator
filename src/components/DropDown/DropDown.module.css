@@ -1,0 +1,13 @@
+.dropDown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 67px;
+}
+
+.dropDown select {
+    width: 346px;
+    height: 57px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 18px;
+}

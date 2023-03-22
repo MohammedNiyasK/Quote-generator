@@ -1,0 +1,41 @@
+.card {
+    max-width: 875px;
+    height: 298px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 71px;
+
+}
+
+.quote {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 32px 90px 82px 91px;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .card{
+    max-width: 400px;
+    height: 250px;
+  }
+  .quote {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 20px;
+}
+}

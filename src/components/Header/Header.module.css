@@ -1,0 +1,24 @@
+
+.header{
+    margin: 24px 55px 58px 55px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.header ul:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        margin: 24px 30px 58px 30px;
+    }
+    .header ul{
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
