@@ -1,23 +1,37 @@
-
-.header{
+.header {
     margin: 24px 55px 58px 55px;
 }
-.header ul{
+
+.header ul {
     display: flex;
     justify-content: space-between;
     font-size: 40px;
     font-weight: 300;
 }
 
-.header ul:hover{
+.header ul:hover {
     cursor: pointer;
 }
 
+.link_active {
+    color: #ffffff;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
 @media only screen and (max-width: 600px) {
-    .header{
+    .header {
         margin: 24px 30px 58px 30px;
     }
-    .header ul{
+
+    .header ul {
         font-size: 20px;
         font-weight: 200;
     }

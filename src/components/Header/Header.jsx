@@ -1,22 +1,32 @@
 import React, { Fragment } from "react";
 import classes from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <Fragment>
       <div className={classes.header}>
         <ul>
-          <Link to="/" style={{ textDecoration: "none", color: "#FFFFFF" }}>
-            <li>Home</li>
-          </Link>
-
-          <Link
-            to="/bookmarks"
-            style={{ textDecoration: "none", color: "#FFFFFF" }}
-          >
-            <li>Bookmarks</li>
-          </Link>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? classes.link_active : classes.link
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/bookmarks"
+              className={({ isActive }) =>
+                isActive ? classes.link_active : classes.link
+              }
+            >
+              Bookmarks
+            </NavLink>
+          </li>
         </ul>
       </div>
     </Fragment>
